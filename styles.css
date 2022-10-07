@@ -1,11 +1,14 @@
 body {
-	background-color: powderblue;
+	background-color: darkgray;
 }
 
 /* Style the navbar */
 #navbar {
 	overflow: hidden;
 	background-color: #333;
+	position: sticky;
+	top: 0;
+	width: 100%;
 }
 
 #navbar a{
@@ -35,7 +38,9 @@ body {
 .sticky + .content {
 	padding-top: 60px;
 }
+/* End of style for the navbar */
 
+/* Showing which page you are on in the navbar */
 .btn {
 	border: none;
 	outline: none;
@@ -47,3 +52,71 @@ body {
 	background-color: green;
 	color: white;
 }
+
+/* End of active button */
+
+/* Demo two column */
+.flex-container {
+	display: flex;
+	background-color: lightgrey;
+	padding: 10px;
+}
+
+.flex-child {
+	flex: 1;
+}
+
+.flex-child:first-child {
+	margin-right: 20px;
+}
+
+.demo-left {
+	background-color: lightgrey;
+	text-align: center;
+}
+
+.demo-right {
+	background-color: lightgrey;
+	text-align: center;
+}
+
+/* Demo explore button */
+.explore-button {
+	border-radius: 4px;
+	background-color: green;
+	border: none;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 28px;
+	padding: 20px;
+	width: 400px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 5px;
+}
+
+.explore-button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5;
+}
+
+.explore-button span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+
+.explore-button:hover span {
+	padding-right: 25px;
+}
+
+.explore-button:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+/* End demo explore */
