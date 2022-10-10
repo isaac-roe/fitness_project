@@ -1,4 +1,51 @@
 <!DOCTYPE html>
+<!-- Workout log page -->
+
+<html lang="en">
+<link rel="stylesheet" href="styles.css">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Fitness App</title>
+
+	<div id="navbar">
+		<a class="btn" href="index.html">Home</a>
+		<a class="btn" href="workoutDemo.html">Demos</a>
+		<a class="btn active" href="log-workout.html">Workout</a>
+		<a class="btn" href="log-calories.html">Calories</a>
+		<a class="btn" href="about.html">About</a>
+		<a class="btn" href="sign-up.html">Sign-Up</a>
+		<a class="btn" href="log-in.html">Log-In</a>
+	</div>
+	<script type="navbar">
+		window.onscroll = function() {myFunction()};
+
+		var navbar = document.getElementById("navbar");
+
+		var sticky = navbar.offsetTop;
+
+		function myFunction() {
+			if (window.pageYOffset >= sticky) {
+				navbar.classList.add("sticky")
+			} else {
+				navbar.classList.remove("sticky");
+			}
+		}
+	</script>
+	<script type="activebutton">
+		var btnContainer = document.getElementById("navbar");
+
+		var btns = btnContainer.getElementsByClassName("btn");
+
+		for (var i = 0; i < btns.length; i++) {
+			btns[i].addEventListener("click", function() {
+				var current = document.getElementsByClassName("active", "");
+				current[0].className = current[0].className.replace(" active", "");
+				this.className += " active";
+			});
+		}
+	</script>
+</head>
 
 <p>
 	Test
