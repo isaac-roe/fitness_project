@@ -4,8 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d125f248-347a-4e5f-86ef-de2d5ba0dbd0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/mystyle.css" afterDir="false" />
+    <list default="true" id="d125f248-347a-4e5f-86ef-de2d5ba0dbd0" name="Changes" comment="css?">
+      <change afterPath="$PROJECT_DIR$/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logstyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/signup.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/signupstyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log-workout.html" beforeDir="false" afterPath="$PROJECT_DIR$/log-workout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mystyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/mystyle.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/workoutDemo.html" beforeDir="false" afterPath="$PROJECT_DIR$/workoutDemo.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,6 +23,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -33,6 +40,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../PyTestExample" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -48,8 +56,31 @@
       <option name="presentableId" value="Default" />
       <updated>1663776588087</updated>
       <workItem from="1663776589880" duration="783000" />
-      <workItem from="1664378905667" duration="1821000" />
+      <workItem from="1664378905667" duration="3634000" />
+      <workItem from="1664986297387" duration="506000" />
+      <workItem from="1665417448776" duration="675000" />
+      <workItem from="1666193956185" duration="2439000" />
+      <workItem from="1666625706548" duration="639000" />
+      <workItem from="1666715566627" duration="15000" />
+      <workItem from="1666812548210" duration="2263000" />
+      <workItem from="1666888292900" duration="621000" />
+      <workItem from="1666971191777" duration="493000" />
     </task>
+    <task id="LOCAL-00001" summary="css?">
+      <created>1664380769176</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1664380769176</updated>
+    </task>
+    <task id="LOCAL-00002" summary="css?">
+      <created>1664380797072</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1664380797072</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -66,5 +97,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="css?" />
+    <option name="LAST_COMMIT_MESSAGE" value="css?" />
   </component>
 </project>
