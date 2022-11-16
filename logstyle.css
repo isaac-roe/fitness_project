@@ -3,12 +3,11 @@ body
     margin: 0;
     padding: 0;
     background-color:#6abadeba;
-    font-family: 'Arial';
+    font-family: 'Arial', sans-serif;
 }
 .login{
         width: 382px;
         overflow: hidden;
-        margin: auto;
         margin: 20 0 0 450px;
         padding: 80px;
         background: #23463f;

@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d125f248-347a-4e5f-86ef-de2d5ba0dbd0" name="Changes" comment="css?">
-      <change afterPath="$PROJECT_DIR$/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logstyle.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/signup.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/signupstyle.css" afterDir="false" />
+    <list default="true" id="d125f248-347a-4e5f-86ef-de2d5ba0dbd0" name="Changes" comment="login">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log-workout.html" beforeDir="false" afterPath="$PROJECT_DIR$/log-workout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mystyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/mystyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workoutDemo.html" beforeDir="false" afterPath="$PROJECT_DIR$/workoutDemo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logstyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/logstyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/signup.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +35,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../PyTestExample" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../TryNLP" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -64,7 +59,9 @@
       <workItem from="1666715566627" duration="15000" />
       <workItem from="1666812548210" duration="2263000" />
       <workItem from="1666888292900" duration="621000" />
-      <workItem from="1666971191777" duration="493000" />
+      <workItem from="1666971191777" duration="2817000" />
+      <workItem from="1667245564571" duration="1020000" />
+      <workItem from="1667403448924" duration="1271000" />
     </task>
     <task id="LOCAL-00001" summary="css?">
       <created>1664380769176</created>
@@ -80,7 +77,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664380797072</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="login">
+      <created>1666971938840</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1666971938840</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -100,6 +104,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="css?" />
-    <option name="LAST_COMMIT_MESSAGE" value="css?" />
+    <MESSAGE value="login" />
+    <option name="LAST_COMMIT_MESSAGE" value="login" />
   </component>
 </project>
