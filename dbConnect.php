@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 
 <html>
+
+<p>test</p>
 	<?php
 
 	$servername = "fitnessappdb";
