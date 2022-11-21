@@ -49,6 +49,17 @@
 </head>
 
 <body>
+
+<p>
+	Bench Press:
+</p>
+<form action="welcome.php" method="post">
+	Sets: <input type="text" name="sets"> Reps: <input type="text" name="reps"> Weight: <input type="text" name="weight">
+	<input type="submit">
+</form>
+
+Number of sets = <?php echo $_POST["sets"]; ?>
+
 <p>
 	Test
 </p>
