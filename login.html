@@ -7,27 +7,46 @@
 </head>
 <body>
 
-<h2>Login Page</h2><br>
-    <div class="login">
-    <form id="login" method="get" action="login.html">
-        <label><b>User Name
-        </b>
-        </label>
-        <label for="Uname"></label><input type="text" name="Uname" id="Uname" placeholder="Username">
-        <br><br>
-        <label><b>Password
-        </b>
-        </label>
-        <label for="Pass"></label><input type="Password" name="Pass" id="Pass" placeholder="Password">
-        <br><br>
-        <input type="button" name="log" id="log" value="Log In Here">
-        <br><br>
-        <label for="check"></label><input type="checkbox" id="check">
-        <span>Remember me</span>
-        <br><br>
-        Forgot <a href="#">Password</a>
-    </form>
-</div>
+    <h2>Modal Login Form</h2>
+    <!--Step 1 : Adding HTML-->
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+    <div id="id01" class="modal">
+
+        <form class="modal-content animate" action="/action_page.php">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190710102234/download3.png" alt="Avatar" class="avatar">
+            </div>
+
+            <div class="container">
+                <label><b>Username</b></label>
+              <label for="uname"></label><input type="text" id="uname" placeholder="Enter Username" name="uname" required>
+
+                <label><b>Password</b></label>
+              <label for="psw"></label><input type="password" id="psw" placeholder="Enter Password" name="psw" required>
+
+                <button type="submit">Login</button>
+              <label>
+                <input type="checkbox" checked="checked" name="remember">
+              </label> Remember me
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+        </form>
+    </div>
+
+    <script>
+      const modal = document.getElementById('id01');
+      window.onclick = function(event) {
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 
 </body>
 </html>

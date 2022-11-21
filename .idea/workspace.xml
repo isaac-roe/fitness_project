@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d125f248-347a-4e5f-86ef-de2d5ba0dbd0" name="Changes" comment="login, signin, workout demo">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="d125f248-347a-4e5f-86ef-de2d5ba0dbd0" name="Changes" comment="login css">
+      <change beforePath="$PROJECT_DIR$/logstyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/logstyle.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +61,9 @@
       <workItem from="1667245564571" duration="1020000" />
       <workItem from="1667403448924" duration="1271000" />
       <workItem from="1668144866516" duration="1325000" />
-      <workItem from="1668616047790" duration="669000" />
+      <workItem from="1668616047790" duration="3166000" />
+      <workItem from="1668791607981" duration="396000" />
+      <workItem from="1669048889875" duration="2021000" />
     </task>
     <task id="LOCAL-00001" summary="css?">
       <created>1664380769176</created>
@@ -91,7 +93,28 @@
       <option name="project" value="LOCAL" />
       <updated>1668144910576</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="login">
+      <created>1668616763009</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1668616763009</updated>
+    </task>
+    <task id="LOCAL-00006" summary="login">
+      <created>1669050342975</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1669050342975</updated>
+    </task>
+    <task id="LOCAL-00007" summary="login css">
+      <created>1669050591312</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1669050591312</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,8 +134,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="css?" />
-    <MESSAGE value="login" />
     <MESSAGE value="login, signin, workout demo" />
-    <option name="LAST_COMMIT_MESSAGE" value="login, signin, workout demo" />
+    <MESSAGE value="login" />
+    <MESSAGE value="login css" />
+    <option name="LAST_COMMIT_MESSAGE" value="login css" />
   </component>
 </project>
