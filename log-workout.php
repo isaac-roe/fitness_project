@@ -49,16 +49,44 @@
 </head>
 
 <body>
+	<?php
+		$bench_sets = $bench_reps = $bench_weight = "";
+
+		if ($_SERVER["REQUEST_METHOD"] == "POST") {
+			$bench_sets = test_input($_POST["bench_sets"]);
+			$bench_reps = test_input($_POST["bench_reps"]);
+			$bench_weight = test_input($_POST["bench_weight"]);
+		}
+
+		function test_input($data) {
+			$data = trim($data);
+			$data = stripslashes($data);
+			$data = htmlspecialchars($data);
+			return $data;
+		}
+		?>
 
 <p>
 	Bench Press:
-	<form action="log-workout.php" method="post">
-		Sets: <input type="text" name="bench-sets"> Reps: <input type="text" name="reps"> Weight: <input type="text" name="weight">
-	</form>
+	<form method="post" action="<?php echo htmlspecialchars($_SERVER[" PHP_SELF "]);?>">
+		Bench Press:
+		Sets: <input type="text" name="bench-sets">
+		Reps: <input type="text" name="bench-reps">
+		Weight: <input type="text" name="bench-weight">
 
-	Number of sets = <?php echo $_POST["bench-sets"]; ?>
+		<input type="submit" name="submit" value="Submit">
+	</form>
 </p>
 
+<p>
+	<?php
+		echo $bench_sets;
+		echo $bench_reps;
+		echo $bench_weight;
+	?>
+</p>
+
+<!--
 <p>
 	SA DB Row:
 	<form>
@@ -69,6 +97,7 @@
 
 	Number of sets = <?php echo $_POST["dbrow-sets"]; ?>
 </p>
+-->
 <!--
 <p>
 	Test
