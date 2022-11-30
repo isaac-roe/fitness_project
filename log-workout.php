@@ -12,7 +12,7 @@
 	<div id="navbar">
 		<a class="btn" href="index.html">Home</a>
 		<a class="btn" href="workoutDemo.html">Demos</a>
-		<a class="btn active" href="log-workout.html"><i class="fa-solid fa-dumbbell"></i>Workout</a>
+		<a class="btn active" href="log-workout.php"><i class="fa-solid fa-dumbbell"></i>Workout</a>
 		<a class="btn" href="log-calories.html">Calories</a>
 		<a class="btn" href="about.html">About</a>
 		<a class="btn" href="signup.html">Sign-Up</a>
