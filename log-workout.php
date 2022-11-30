@@ -69,7 +69,6 @@
 <p>
 	Bench Press:
 	<form method="post" action="<?php echo htmlspecialchars($_SERVER[" PHP_SELF "]);?>">
-		Bench Press:
 		Sets: <input type="text" name="bench-sets">
 		Reps: <input type="text" name="bench-reps">
 		Weight: <input type="text" name="bench-weight">
