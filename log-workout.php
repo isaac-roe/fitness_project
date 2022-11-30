@@ -52,20 +52,22 @@
 
 <p>
 	Bench Press:
-	<form action="welcome.php" method="post">
-		Sets: <input type="text" name="sets"> Reps: <input type="text" name="reps"> Weight: <input type="text" name="weight">
+	<form action="log-workout.php" method="post">
+		Sets: <input type="text" name="bench-sets"> Reps: <input type="text" name="reps"> Weight: <input type="text" name="weight">
 	</form>
 
-	Number of sets = <?php echo $_POST["sets"]; ?>
+	Number of sets = <?php echo $_POST["bench-sets"]; ?>
 </p>
 
 <p>
 	SA DB Row:
 	<form>
-		<form action="welcome.php" method="post">
-		Sets: <input type="text" name="sets"> Reps: <input type="text" name="reps"> Weight: <input type="text" name="weight">
+		<form action="log-workout.php" method="post">
+		Sets: <input type="text" name="dbrow-sets"> Reps: <input type="text" name="reps"> Weight: <input type="text" name="weight">
 		<input type="submit">
 	</form>
+
+	Number of sets = <?php echo $_POST["dbrow-sets"]; ?>
 </p>
 <!--
 <p>
