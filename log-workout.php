@@ -50,12 +50,12 @@
 
 <body>
 	<?php
-		$bench_sets = $bench_reps = $bench_weight = "";
+		$benchsets = $benchreps = $benchweight = "";
 
 		if ($_SERVER["REQUEST_METHOD"] == "POST") {
-			$bench_sets = test_input($_POST["bench_sets"]);
-			$bench_reps = test_input($_POST["bench_reps"]);
-			$bench_weight = test_input($_POST["bench_weight"]);
+			$benchsets = test_input($_POST["bench-sets"]);
+			$benchreps = test_input($_POST["bench-reps"]);
+			$benchweight = test_input($_POST["bench-weight"]);
 		}
 
 		function test_input($data) {
@@ -66,24 +66,27 @@
 		}
 		?>
 
-<p>
-	Bench Press:
-	<form method="post" action="<?php echo htmlspecialchars($_SERVER[" PHP_SELF "]);?>">
-		Sets: <input type="text" name="bench-sets">
-		Reps: <input type="text" name="bench-reps">
-		Weight: <input type="text" name="bench-weight">
+		<p>
+			Bench Press:
+			<form method="post" action="<?php echo htmlspecialchars($_SERVER[" PHP_SELF "]);?>">
+				Sets: <input type="text" name="bench-sets">
+				Reps: <input type="text" name="bench-reps">
+				Weight: <input type="text" name="bench-weight">
 
-		<input type="submit" name="submit" value="Submit">
-	</form>
-</p>
+				<input type="submit" name="submit" value="Submit">
+			</form>
+		</p>
 
-<p>
-	<?php
-		echo $bench_sets;
-		echo $bench_reps;
-		echo $bench_weight;
-	?>
-</p>
+		<p>
+			<?php
+				echo $benchsets;
+				echo $benchreps;
+				echo $benchweight;
+			?>
+		</p>
+	</body>
+</html>
+
 
 <!--
 <p>
