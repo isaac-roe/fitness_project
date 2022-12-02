@@ -1,16 +1,44 @@
-import mysql.connector
+import pyodbc
+import codecs
+import webbrowser
 
-mydb = mysql.connector.connect(
-	host="fitnessappdb",
-	user="admin",
-	password="fitnessfreaks"
-)
 
-mycursor = mydb.cursor()
+cursor = pyodbc.connect('DRIVER={SQL Server}; SERVER=localhost; DATABASE=FitnessWebsite')
 
-mycursor.execute("CREATE DATABASE testDB")
+sql_command = "SELECT * FROM Workout"
 
-for x in mycursor:
-	print(x)
+output = cursor.execute(sql_command)
 
-db.close()
+f = open('hopefullyworking.html', 'w')
+
+html_template = """
+<html>
+<head></head>
+<body>
+<p>Hello World! </p>
+
+</body>
+</html>
+"""
+
+f.write(html_template)
+
+for row in output:
+    f.write("<p>" + row.WorkoutName + "</p>")
+    f.write("<p>" + row.LiftA1Name + "</p>")
+    f.write("<p>" + row.LiftA2Name + "</p>")
+    f.write("<p>" + row.LiftB1Name + "</p>")
+    f.write("<p>" + row.LiftB2Name + "</p>")
+    f.write("<p>" + row.LiftC1Name + "</p>")
+    f.write("<p>" + row.LiftC2Name + "</p>")
+    f.write("<p>" + row.LiftC3Name + "</p>")
+
+cursor.close()
+
+f.close()
+
+file = codecs.open("hopefullyworking.html", 'r', "utf-8")
+
+print(file.read())
+
+webbrowser.open('hopefullyworking.html')
