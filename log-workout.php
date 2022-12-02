@@ -84,6 +84,26 @@
 				echo $benchweight;
 			?>
 		</p>
+
+		<?php
+		$host ="localhost";
+		// $username ="username";
+		// $password ="password";
+		$database ="database";
+
+		mssql_connect($host);
+		mssql_select_db($database);
+		?>
+
+		<?php
+		$query ="SELECT * FROM Workout";
+		$result =mssql_query($query);
+		while ( $record = mssql_fetch_array($result) )
+		{
+			echo $record["*"] .",<br />";
+		}
+		?>
+
 	</body>
 </html>
 
