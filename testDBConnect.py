@@ -5,11 +5,11 @@ import webbrowser
 
 cursor = pyodbc.connect('DRIVER={SQL Server}; SERVER=localhost; DATABASE=FitnessWebsite')
 
-sql_command = "SELECT * FROM Workout"
+sql_command = "SELECT * FROM Workout WHERE WorkoutID = 1;"
 
 output = cursor.execute(sql_command)
 
-f = open('hopefullyworking.html', 'w')
+f = open('day1workout.html', 'w')
 
 html_template = """
 <html>
@@ -37,8 +37,8 @@ cursor.close()
 
 f.close()
 
-file = codecs.open("hopefullyworking.html", 'r', "utf-8")
+file = codecs.open("day1workout.html", 'r', "utf-8")
 
 print(file.read())
 
-webbrowser.open('hopefullyworking.html')
+webbrowser.open('day1workout.html')
