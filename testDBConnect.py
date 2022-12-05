@@ -24,7 +24,7 @@ html_template = """
 f.write(html_template)
 
 for row in output:
-    f.write("<p>" + row.WorkoutName + "</p>")
+    f.write("<h2>" + row.WorkoutName + "</h2>")
     f.write("<p>" + row.LiftA1Name + "</p>")
     f.write("<p>" + row.LiftA2Name + "</p>")
     f.write("<p>" + row.LiftB1Name + "</p>")
