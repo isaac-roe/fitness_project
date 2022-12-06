@@ -5,7 +5,7 @@ import webbrowser
 
 cursor = pyodbc.connect('DRIVER={SQL Server}; SERVER=localhost; DATABASE=FitnessWebsite')
 
-sql_command = "SELECT * FROM Workout WHERE WorkoutID = 1;"
+sql_command = "SELECT * FROM Workout"
 
 output = cursor.execute(sql_command)
 

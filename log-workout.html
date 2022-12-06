@@ -2,12 +2,182 @@
 <!-- Workout log page -->
 
 <html lang="en">
-<link rel="stylesheet" href="styles_css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/font-awesome.min.css">
 
 <head>
 	<meta charset="UTF-8">
 	<title>Fitness App</title>
+
+	<style>
+		body {
+	background-color: darkgray;
+}
+
+/* Style the navbar */
+#navbar {
+	overflow: hidden;
+	background-color: #333;
+	position: sticky;
+	top: 0;
+	width: 100%;
+}
+
+#navbar a{
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px;
+	text-decoration: none;
+}
+
+#navbar a:hover {
+	background: #ddd;
+	color: black;
+}
+
+.content {
+	padding: 16px;
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.sticky + .content {
+	padding-top: 60px;
+}
+/* End of style for the navbar */
+
+/* Showing which page you are on in the navbar */
+.btn {
+	border: none;
+	outline: none;
+	padding: 10px 16px;
+	cursor: pointer;
+}
+
+.active, .btn:hover {
+	background-color: green;
+	color: white;
+}
+
+/* End of active button */
+
+/* Demo two column */
+.flex-container {
+	display: flex;
+	background-color: lightgrey;
+	padding: 10px;
+}
+
+.flex-child {
+	flex: 1;
+}
+
+.flex-child:first-child {
+	margin-right: 20px;
+}
+
+.demo-left {
+	background-color: lightgrey;
+	text-align: center;
+}
+
+.demo-right {
+	background-color: lightgrey;
+	text-align: center;
+}
+
+/* Demo explore button */
+.explore-button {
+	border-radius: 4px;
+	background-color: green;
+	border: none;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 28px;
+	padding: 20px;
+	width: 400px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 5px;
+}
+
+.explore-button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5;
+}
+
+.explore-button span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+
+.explore-button:hover span {
+	padding-right: 25px;
+}
+
+.explore-button:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+/* End demo explore */
+
+.siteFooterBottomSection_links {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+ul {
+	list-style: none;
+	padding: 0px;
+}
+
+ /* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+} 
+
+	</style>
 
 	<div id="navbar">
 		<a class="btn" href="index.html">Home</a>
@@ -46,11 +216,32 @@
 			});
 		}
 	</script>
+
+	<script>
+		function openCity(evt, cityName) {
+
+		var i, tabcontent, tablinks;
+
+		tabcontent = document.getElementsByClassName("tabcontent");
+		for (i = 0; i < tabcontent.length; i++) {
+		  tabcontent[i].style.display = "none";
+		}
+
+		tablinks = document.getElementsByClassName("tablinks");
+		for (i = 0; i < tablinks.length; i++) {
+		  tablinks[i].className = tablinks[i].className.replace(" active", "");
+		}
+
+		document.getElementById(cityName).style.display = "block";
+		evt.currentTarget.className += " active";
+		}
+	</script>
+
 </head>
 
 <body>
 
-<p>
+<!-- <p>
 	Bench Press:
 	<form action="welcome.php" method="post">
 		Sets: <input type="text" name="sets"> Reps: <input type="text" name="reps"> Weight: <input type="text" name="weight">
@@ -67,6 +258,133 @@
 		<input type="submit">
 	</form>
 </p>
+
+	<script>
+	document.getElementById("defaultOpen").click();
+	</script> -->
+
+<h2>
+	Choose a day and log your workout!
+</h2>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Day1')">Day 1</button>
+  <button class="tablinks" onclick="openCity(event, 'Day2')">Day 2</button>
+  <button class="tablinks" onclick="openCity(event, 'Day3')">Day 3</button>
+</div>
+
+<!-- Tab content -->
+<div id="Day1" class="tabcontent">
+  <h3>Day 1</h3>
+  <p>Deadlift</p>
+  <form action="welcome.php" method="post">
+		Sets: <input type="text" name="sets"> Reps: <input type="text" name="reps"> Weight: <input type="text" name="weight">
+	</form>
+  <p>Rotational Box Jump</p>
+  <form action="welcome.php" method="post">
+		Sets: <input type="text" name="sets"> Reps: <input type="text" name="reps"> Weight: <input type="text" name="weight">
+	</form>
+
+  <p>Band Press to Raise</p>
+  <form action="welcome.php" method="post">
+		Sets: <input type="text" name="sets"> Reps: <input type="text" name="reps"> Weight: <input type="text" name="weight">
+	</form>
+
+  <p>Kneeling SA Pulldown</p>
+<form action="welcome.php" method="post">
+		Sets: <input type="text" name="sets"> Reps: <input type="text" name="reps"> Weight: <input type="text" name="weight">
+	</form>
+
+  <p>Cable Low to High</p>
+  <form action="welcome.php" method="post">
+		Sets: <input type="text" name="sets"> Reps: <input type="text" name="reps"> Weight: <input type="text" name="weight">
+	</form>
+
+  <p>Kang Squats</p>
+  <form action="welcome.php" method="post">
+		Sets: <input type="text" name="sets"> Reps: <input type="text" name="reps"> Weight: <input type="text" name="weight">
+	</form>
+
+  <p>Step Back MB Toss</p>
+  <form action="welcome.php" method="post">
+		Sets: <input type="text" name="sets"> Reps: <input type="text" name="reps"> Weight: <input type="text" name="weight">
+	</form>
+</div>
+
+<div id="Day2" class="tabcontent">
+  <h3>Day 2</h3>
+  <p>Barbell Bench</p>
+  <form action="welcome.php" method="post">
+		Sets: <input type="text" name="sets"> Reps: <input type="text" name="reps"> Weight: <input type="text" name="weight">
+	</form>
+  <p>Bird Dog Row</p>
+  <form action="welcome.php" method="post">
+		Sets: <input type="text" name="sets"> Reps: <input type="text" name="reps"> Weight: <input type="text" name="weight">
+	</form>
+
+  <p>Bulgarian Squat</p>
+  <form action="welcome.php" method="post">
+		Sets: <input type="text" name="sets"> Reps: <input type="text" name="reps"> Weight: <input type="text" name="weight">
+	</form>
+
+  <p>Stability Ball Leg Curl</p>
+<form action="welcome.php" method="post">
+		Sets: <input type="text" name="sets"> Reps: <input type="text" name="reps"> Weight: <input type="text" name="weight">
+	</form>
+
+  <p>Bear Crawl Pull Through</p>
+  <form action="welcome.php" method="post">
+		Sets: <input type="text" name="sets"> Reps: <input type="text" name="reps"> Weight: <input type="text" name="weight">
+	</form>
+
+  <p>Assisted Hip Rotation</p>
+  <form action="welcome.php" method="post">
+		Sets: <input type="text" name="sets"> Reps: <input type="text" name="reps"> Weight: <input type="text" name="weight">
+	</form>
+
+  <p>Broad Jump</p>
+  <form action="welcome.php" method="post">
+		Sets: <input type="text" name="sets"> Reps: <input type="text" name="reps"> Weight: <input type="text" name="weight">
+	</form>
+</div>
+
+<div id="Day3" class="tabcontent">
+  <h3>Day 3</h3>
+  <p>Saftey Bar Slplit Squat</p>
+  <form action="welcome.php" method="post">
+		Sets: <input type="text" name="sets"> Reps: <input type="text" name="reps"> Weight: <input type="text" name="weight">
+	</form>
+  <p>Single Leg Hop + MB Slam</p>
+  <form action="welcome.php" method="post">
+		Sets: <input type="text" name="sets"> Reps: <input type="text" name="reps"> Weight: <input type="text" name="weight">
+	</form>
+
+  <p>Weighted Pullups</p>
+  <form action="welcome.php" method="post">
+		Sets: <input type="text" name="sets"> Reps: <input type="text" name="reps"> Weight: <input type="text" name="weight">
+	</form>
+
+  <p>SA DB OH Press</p>
+<form action="welcome.php" method="post">
+		Sets: <input type="text" name="sets"> Reps: <input type="text" name="reps"> Weight: <input type="text" name="weight">
+	</form>
+
+  <p>Middle Bridge</p>
+  <form action="welcome.php" method="post">
+		Sets: <input type="text" name="sets"> Reps: <input type="text" name="reps"> Weight: <input type="text" name="weight">
+	</form>
+
+  <p>Glute Bridge Walkouts</p>
+  <form action="welcome.php" method="post">
+		Sets: <input type="text" name="sets"> Reps: <input type="text" name="reps"> Weight: <input type="text" name="weight">
+	</form>
+
+  <p>Cuban Press</p>
+  <form action="welcome.php" method="post">
+		Sets: <input type="text" name="sets"> Reps: <input type="text" name="reps"> Weight: <input type="text" name="weight">
+	</form>
+</div>
+
 <!--
 <p>
 	Test
